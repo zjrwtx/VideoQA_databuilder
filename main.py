@@ -24,7 +24,7 @@ os.environ['http_proxy'] = 'http://127.0.0.1:7890'
 os.environ["https_proxy"] = "http://127.0.0.1:7890"
 #streamlit run dataset.py --server.port 2323
 st.set_page_config(
-    page_title='基于bilibili和youtube视频而构建大语言模型高质量训练数据集（可自定义数据格式）',
+    page_title='基于youtube视频（计划支持bilibili等其他平台）和零一万物大模型构建大语言模型高质量训练数据集（计划支持可自定义输出的训练数据格式）',
     layout="wide",
     page_icon=':robot:',
     initial_sidebar_state="expanded",#“auto”或“expanded”或“collapsed”
@@ -110,9 +110,11 @@ def reset_text_area():
         session_state.text_area_tittle="回答：(内容为空则不保存此回答)"
 def main():
     st.markdown("[公众号：正经人王同学](https://mp.weixin.qq.com/s/_ea6g0pzzeO4WyYtuWycWQ)")
-    st.markdown("[本项目开源在github](https://mp.weixin.qq.com/s/_ea6g0pzzeO4WyYtuWycWQ)")
+    st.markdown("[本项目开源在github](https://github.com/zjrwtx/VideoQA_databuilder)")
     st.markdown("微信联系我：agi_isallyouneed")
-    st.title("基于youtube视频（计划支持bilibili等其他平台）而构建大语言模型高质量训练数据集（计划支持可自定义数据格式）")
+    st.title("VideoQA_databuilder")
+    st.markdown("功能描述:基于youtube视频（计划支持bilibili等其他平台）和零一万物大模型构建大语言模型高质量训练数据集（计划支持可自定义输出的训练数据格式）")
+    
     st.markdown("使用指南：使用youtubequestion项目生成指定视频的questions文件——本项目读取questions文件——然后基于零一万物模型生成基于视频内容的回答后自我调整——最后将回答保存到answers.json文件。")
     
     API_KEY=st.sidebar.text_input("请填写你的零一万物模型apikey", value='',type="password")
