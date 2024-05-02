@@ -3,10 +3,14 @@
 基于youtube和bilibili等其他平台和零一万物大模型构建大语言模型高质量训练数据集（计划支持可自定义输出的训练数据格式）
 
 # update news！
+<b>2024-5-2</b>：增加对webpage网页的question生成支持
+<br>项目地址：https://github.com/zjrwtx/WebQuestions_databuilder
+<br>通过Yi模型或ollama的本地小模型对输入的webpage网页地址的内容合成高质量的questions数据供微调数据合成使用
 
 <b>2024-4-29</b>：增加对bilibili视频的question生成支持
 <br>项目地址：https://github.com/zjrwtx/bilibiliQA_databuilder 
 <br>可基于bilibili视频构建大模型问答训练数据，输入bilibili视频地址等信息即可生成questions数据供videoQA_databuilder项目使用
+
 
 # 演示视频地址
 [基于youtube和bilibili等其他平台和零一万物大模型构建大语言模型高质量训练数据集（计划支持可自定义输出的训练数据格式）
