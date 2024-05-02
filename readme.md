@@ -1,6 +1,6 @@
 <a name="778d2597"></a>
 # 一句话概述：
-基于youtube和bilibili等其他平台和零一万物大模型构建大语言模型高质量训练数据集（计划支持可自定义输出的训练数据格式）
+基于youtube、bilibili等视频平台、webpage网页等，利用零一万物大模型或ollama本地小模型构建大语言模型高质量训练数据集（计划支持可自定义输出的训练数据格式）
 
 # update news！
 <b>2024-5-2</b>：增加对webpage网页的question生成支持
